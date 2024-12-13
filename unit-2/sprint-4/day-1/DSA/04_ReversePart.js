@@ -1,3 +1,6 @@
+/* Given a string and 
+*/
+
 function solve(N,S,L,R){
   let temp = S.slice(L, R+1);
   let rev = "";
@@ -5,8 +8,8 @@ function solve(N,S,L,R){
     rev += temp[i];
   }
   let leftRemaining = S.slice(0, L);
-  let remaining = S.slice(R+1);
-  rev = leftRemaining + rev + remaining;
+  let rightRemaining = S.slice(R+1);
+  rev = leftRemaining + rev + rightRemaining;
   //rev += remaining;
   console.log(rev)
 }
