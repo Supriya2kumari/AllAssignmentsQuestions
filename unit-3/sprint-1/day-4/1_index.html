@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo class and Elements</title>
+    <style>
+        input:focus{
+            background-color: pink;
+        }
+        button{
+            background-color: rgb(186, 29, 29);
+            border: none;
+            color: white;
+
+        }
+        button:hover{
+            background-color: red;
+            color: rgb(8, 6, 116);
+        }
+        p:nth-child(4n+2){
+            color: rgb(246, 45, 216);
+            font-size: 20px;
+            font-weight: bolder;
+        }
+        p:first-child{
+            color:rgb(186, 29, 29);
+            font-size: 50px;
+        }
+        #one::first-line{
+            font-size: 35px;
+            font-weight: bold;
+            color: firebrick;
+        }
+        span{
+            font-size: 35px;
+            font-weight: bold;
+            color: firebrick;
+        }
+        #one::after{
+            content: "after";
+        }
+        #one::before{
+            content: "before   ";
+        }
+    </style>
+</head>
+<body>
+    <p>1</p>
+    <p>2</p>
+    <p>3</p>
+    <p>4</p>
+    <p>5</p>
+    <p>6</p>
+    <p>7</p>
+    <p>8</p>
+    <p>9</p>
+    <p>10</p>
+    <p><span>L</span>orem ipsum dolor sit amet consectetur adipisicing elit. Officia, saepe fugit. Adipisci, atque quas dolore dolor repellat quo quaerat id sapiente molestiae, provident, eos incidunt doloribus. Veritatis provident nisi incidunt.
+    Rem nihil autem excepturi suscipit, quo voluptates distinctio minima, consequatur unde fugiat quasi! Quaerat nisi cupiditate dolorem laborum maxime pariatur ad distinctio, doloribus quisquam velit, beatae culpa minima cumque explicabo!
+    Maiores animi quos veritatis ducimus sunt nemo deleniti repudiandae et nisi eius! Debitis quis itaque id commodi accusamus! Distinctio, atque itaque? Est, veritatis aliquid obcaecati sed quo facere necessitatibus unde.</p>
+    <p id="one">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur explicabo impedit atque ipsam, accusantium sit corrupti iure odio, laborum voluptatem rem illum saepe esse dolor officiis ullam maiores, culpa cum?
+    Laboriosam a, eos tempore ipsum commodi hic! Laudantium est et reiciendis deleniti ipsam! Numquam dolores quae inventore iste impedit. Iusto et quasi nulla distinctio perferendis aut deleniti modi mollitia vitae?
+    Doloribus corrupti sit ducimus perferendis ipsum dolorum amet, asperiores temporibus harum blanditiis dolor mollitia ad? At laborum ipsa impedit expedita. Magni quasi dicta soluta veritatis, repudiandae doloribus deserunt non! Esse?</p>
+    <input type="text" placeholder="Enter your name"><br><br>
+    <button>Register</button>
+</body>
+</html>
