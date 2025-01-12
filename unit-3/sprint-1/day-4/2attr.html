@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attribute Selector</title>
+    <style>
+       /* [type = "number"] {
+            background-color: fuchsia;
+        } */
+
+        /* input[type]{
+            background-color: fuchsia;
+        } */
+
+        /*
+            [type]{
+            background-color: fuchsia;
+        }
+        */
+
+        /*
+            input[placeholder ^= 'Enter']{
+            background-color: fuchsia;
+            }
+        */
+        input[placeholder $= 'name']{
+            background-color: fuchsia;
+        }
+    </style>
+</head>
+<body>
+    <input  placeholder="Enter name">
+    <input type="" placeholder="End name">
+    <input type="number">
+    <ul type="circle">
+        <li>HTML</li>
+        <li>CSS</li>
+    </ul>
+</body>
+</html>
